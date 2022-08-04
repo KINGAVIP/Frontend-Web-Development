@@ -1,0 +1,80 @@
+/* notes-
+for styling a partiular class we have to use .
+for  id #
+rest directly
+*/
+
+body{
+    background:url("https://images.unsplash.com/photo-1472214103451-9374bd1c798e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80");
+    overflow: hidden;
+    /* for the centering of elements all these are required */
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    background-size: cover;
+}
+
+h2{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow',
+     Arial, sans-serif;
+    font-size: 40px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    /* color:brown; */
+    color:white;
+    text-shadow: 2px 3px 1px transparent;
+    /* background-image: linear-gradient(pink,red,blue,yellow); */
+    background: linear-gradient(red,black,blue,green,white);
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+}
+
+.clock{
+    display: flex;
+    
+}
+.clock div{
+    margin: 5px;
+
+}
+.clock span{
+    width: 100px;
+    height: 80px;
+    background-color: burlywood;
+    opacity: 80%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    text-shadow: 1px 1px 1px black;
+    text-shadow: 1px 1px 1px white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.clock .text{
+    height: 35px;
+    letter-spacing: 2px;
+    color: blue;
+    background-color: black;
+    text-transform: uppercase;
+    opacity: 100%;
+    margin-top: 10px;
+    text-align: center;
+    opacity: 0.8;
+    font-size: 15px;
+}
+.clock #ampm{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    bottom: 0;
+    /* position: absolute; */
+    /* width: 60px; */
+    /* height: 30px; */
+}
