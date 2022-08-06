@@ -1,0 +1,60 @@
+body{
+    background: yellow;
+    display: flex;
+    flex-direction: column;
+    margin: 0   ;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+}
+.form{
+    padding: 20px;
+    background:white;
+    border-radius: 20px;
+    box-shadow: 5px 8px 9px red;
+    position: relative;
+}
+.score{
+    color: green;
+    text-align: right;
+    
+}
+.question{
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+.input{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    border:solid 4px green;
+}
+.input::placeholder{
+    color: gray;
+    font-family: cursive;
+}
+.btn{
+    background: green;
+    color: white;
+    border: none;
+    display: block;
+    width: 100%;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.3);
+    cursor: pointer;
+
+}
+.btn:hover{
+    filter: brightness(0.7);
+}
+
