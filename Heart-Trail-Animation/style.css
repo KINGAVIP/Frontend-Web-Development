@@ -1,0 +1,45 @@
+/* alt+, for preventing the code to go into end */
+body{
+    background: black;
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+h2{
+    color: white;
+}
+span{
+    background: url("https://cdn4.iconfinder.com/data/icons/general-office/91/General_Office_54-256.png");
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* animation: animate 3s linear; */
+    animation: animate 3s linear;
+    /* the third parameter i.e direction here decides the direction
+    if linear->missile like animation
+    reverse->rainfall like animation
+    can try
+    */
+}
+@keyframes animate{
+    0%{
+        transform: translate(-50%,-50%);
+        opacity: 1;
+        filter: hue-rotate(0);
+    }
+    100%{
+        
+        transform: translate(-50%,-5000%);
+        opacity: 0;
+        filter: hue-rotate(2600deg);
+
+    }
+}
