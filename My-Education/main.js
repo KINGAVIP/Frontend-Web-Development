@@ -19,3 +19,19 @@ quesEl.forEach(ques =>{
             iconel.className='fa-solid fa-plus'
     })
 })
+
+
+const menubtn=document.querySelector(".menu-btn");
+const closebtn=document.querySelector(".close-btn");
+const menu=document.querySelector(".nav__menu");
+menubtn.addEventListener("click",()=>{
+    menubtn.style.display='none';
+    menu.style.display='flex';
+    closebtn.style.display='inline-block';
+})
+
+closebtn.addEventListener("click",()=>{
+    closebtn.style.display='none';
+    menubtn.style.display='inline-block';
+    menu.style.display='none';
+})

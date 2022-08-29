@@ -122,6 +122,9 @@ nav .container h2{
     color: red;
 }
 nav .container Button{
+    /* margin: 2rem 0; */
+    /* right: 3rem; */
+    /* display: inline-block; */
     display: none;
 }
 nav .container ul{
@@ -371,8 +374,17 @@ footer{
     margin-top: 1.5rem;
 }
     
-
-@media screen and (max-width:900px){
+@keyframes movenav
+{
+    0%{
+        transform: rotateZ(-90deg);
+    }
+    100%{
+        transform: rotateZ(0);
+        opacity: 1;
+    }
+}
+@media screen and (max-width:1100px){
     body{
         background: black;
         overflow-x: hidden;
@@ -399,18 +411,65 @@ footer{
     nav{
         top: 0;
         position: fixed;
-        z-index: 13;
-
+        z-index: 15;
     }
     nav .container{
-        width: 100%;
+        width: 50%;
         padding: 1rem;
+        width: 100%;
     }
     nav .container ul{
+        color: white;
+        box-shadow: 1rem 6rem 3rem rgba(0,0,0,0.5);
+        border: 2px solid transparent;
+        /* display: none; */
+        background: var(--color-bg2);
+        width: 4rem;
+        height: 2rem;
+        z-index: 12;
+        top: 0rem;
+        left: 0rem;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        width: 40%;
         display: none;
+        padding: 2rem;
+        height: 100vh;
+        /* height: 100vh; */
+        /* /* height: 30rem; * */
+    }
+    nav .container li{
+        display: grid;
+        gap: 3rem;
+        animation: movenav .6s linear forwards;
+        opacity: 0;
+        width: 100%;
+        height: fit-content;
+        place-content: center;
+    }
+    nav .container ul li a{
+        color: white;
+    }
+    nav .container li:nth-child(2) {
+        animation-delay: .4s;
+    }
+    nav .container li:nth-child(3) {
+        animation-delay: .5s;
+    }
+    nav .container li:nth-child(4) {
+        animation-delay: .7s;
     }
     nav .container .menu-btn{
         display: inline-block;
+        position: fixed;
+        right: 1rem;
+    }
+    nav .container .close-btn{
+        display: none;
+        background: transparent;
+        color: red;
+        font-size: 1.5rem;
         position: fixed;
         right: 1rem;
     }
@@ -474,4 +533,5 @@ footer{
     .footer-4 .social{
         justify-content: center;
     }
+
 }
