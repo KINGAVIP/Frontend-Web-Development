@@ -448,6 +448,7 @@ footer{
         height: fit-content;
         place-content: center;
     }
+
     nav .container ul li a{
         color: white;
     }
