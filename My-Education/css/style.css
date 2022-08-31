@@ -12,7 +12,7 @@
 :root{
     --color-primary:#6c63ff;
     --color-success:#00bf8e;
-    --color-warning:#f7c94b;
+    --color-warning:#a28841;
     --color-danger:#f75842;
     --color-danger-variant:rgba(247,88,66,0.4);
     --color-white:#ffff;
@@ -33,6 +33,7 @@ body{
     font-family: 'Montserrat', sans-serif;
     color: var(--color-white);
     background: var(--color-bg);
+    background-image: url("/images/bg-texture.png");
     line-height: 1.7;
 }
 a{
@@ -384,7 +385,7 @@ footer{
         opacity: 1;
     }
 }
-@media screen and (max-width:1100px){
+@media screen and (max-width:900px){
     body{
         background: black;
         overflow-x: hidden;
@@ -442,7 +443,7 @@ footer{
     nav .container li{
         display: grid;
         gap: 3rem;
-        animation: movenav .6s linear forwards;
+        animation: movenav .3s linear forwards;
         opacity: 0;
         width: 100%;
         height: fit-content;
@@ -453,13 +454,13 @@ footer{
         color: white;
     }
     nav .container li:nth-child(2) {
-        animation-delay: .4s;
+        animation-delay: .2s;
     }
     nav .container li:nth-child(3) {
-        animation-delay: .5s;
+        animation-delay: .3s;
     }
     nav .container li:nth-child(4) {
-        animation-delay: .7s;
+        animation-delay: .4 s;
     }
     nav .container .menu-btn{
         display: inline-block;

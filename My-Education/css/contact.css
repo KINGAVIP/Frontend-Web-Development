@@ -1,0 +1,143 @@
+:root{
+    --color-primary:#6c63ff;
+    --color-success:#00bf8e;
+    --color-warning:#a28841;
+    --color-danger:#f75842;
+    --color-danger-variant:rgba(247,88,66,0.4);
+    --color-white:#ffff;
+    --color-light:rgba(255,255,255,0.7);
+    --color-black:#000;
+    --color-bg:#1f2641;
+    --color-bg1:#2e3267;
+    --color-bg2:#424890;
+
+    --container-width-lg:80%;
+    --container-width-md:90%;
+    --container-width-sm:94%;
+
+    --transition:all 0.4s ease;
+}
+section.contactus{
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+    /* margin: 7rem auto 7rem; */
+}
+.contactus__container{
+    background: var(--color-bg1);
+    width: 80%;
+    margin: 0 auto;
+    height: 30rem;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    border-radius: 1rem;
+}
+
+.aside .image{
+    width: 12rem;
+    height: 12rem;
+    background-size: cover;
+}
+.aside{
+    position: relative;
+    margin:auto 2rem;
+    background: var(--color-bg2);
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    border-radius: 2rem;
+    bottom: 5rem;
+    margin-bottom: 8rem;
+    
+}
+.aside h2{
+    margin-bottom: 2rem;
+}
+.aside .social{
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+.aside .social i{
+    display:flex;
+    gap: 1rem;
+    padding: 0.4rem 0;
+}
+.aside .social i p{
+    text-transform: lowercase;
+    font-size: 0.6rem;
+    margin: auto 0;
+    color: var(--color-primary);
+}
+.aside .social .links{
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 1rem;
+}
+.aside .social .links a{
+    width: 2rem;
+    height: 2rem;
+    background: var(--color-bg1);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.aside .social .links a:hover{
+    background: transparent;
+}
+form{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+}
+input{
+    height: 3rem;
+}
+.form__name{
+    display: flex;
+    gap: 1.3rem;
+    width: 100%;
+    /* background: red; */
+    justify-content: space-between;
+}
+.form__name input{
+    width: 50%;
+}
+form input,textarea{
+    color: white;
+    background: var(--color-bg);
+    padding:1rem 1rem;
+    font-size: 1rem;
+
+}
+form button{
+    width: max-content;
+}
+
+
+@media screen and (max-width:900px){
+    .contactus__container{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 0;
+        height: fit-content;
+        width: 100%;        
+    }
+    .aside{
+        margin-top: 3rem;
+        /* margin: 0; */
+        display: flex;
+        /* margin: 0 auto; */
+        margin-bottom: 0;
+    }
+    .aside p{
+    }
+    .form__name input{
+        width: 100%;
+        /* margin: 0 1.5rem 3rem; */
+    }
+    .form__name{
+        flex-direction: column;
+    }
+}
