@@ -1,5 +1,5 @@
 window.addEventListener("scroll",()=>{
-    if(window.scrollY>0)
+    if(window.scrollY>100)
     {
         document.querySelector(".nav__2").classList.add("newnav");
         document.querySelector(".nav-1").classList.add("newnav");
