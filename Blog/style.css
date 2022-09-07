@@ -42,6 +42,7 @@ body{
     line-height: 1.5;
     font-family: 'Montserrat', sans-serif;
     font-size: 0.8rem;
+    max-width: 100vw;
 }
 
 h1,h2,h3,h4,h5{
@@ -75,6 +76,7 @@ h5{
 .container{
     width: var(--container-width-lg);
     margin: 0 auto;
+    padding-bottom: 3rem;
 }
 section{
     width: 100vw;
@@ -101,6 +103,8 @@ nav{
 .nav__container{
     display: flex;
     height: 100%;
+    width: var(--container-width-lg);
+    margin: 0 auto;
     justify-content: space-between;
     align-items: center;
 }
@@ -180,7 +184,9 @@ section.landing{
     border-radius: var(--card-border-radius-1);
     background: var(--color-gray-900);
 }
-
+.topic:hover{
+    background: var(--color-gray-700);
+}
 .landing__right h4
 {
     color: white;
@@ -206,4 +212,107 @@ section.landing{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 4.5rem;
+}
+section.categories{
+    padding: 6rem 0 3rem;
+    border-top: 2px solid var(--color-gray-900);
+
+}
+.category__container{
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+    text-align: center;
+}
+footer{
+    box-shadow: inset 1rem 1rem 3rem rgba(0,0,0,0.6);
+
+    /* border: 2px solid red; */
+}
+.footer__container .social{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 4rem 0;
+    /* margin: 6rem 0; */
+}
+.footer__container .social a{
+    width: 2.4rem;
+    height: 2.4rem;
+    background:var(--color-gray-900);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    transition: var(--transition);
+}
+.footer__container .social a:hover{
+    background: transparent;
+}
+.footer__container .down{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    font-size: 1rem;
+    justify-content: space-between;
+}
+.footer__container .down h5{
+    padding-bottom: 1rem;
+}
+.footer__container li a{
+    color: #6f6af8;
+}
+
+@media screen and (max-width:1024px){
+    body{
+        background: red;
+    }
+    .container{
+        width: var(--container-width-md);
+    }
+    .nav__container{
+        position: relative;
+    }
+    .nav__container ul{
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        gap: 0.1rem;
+        right: 0rem;
+        display: none;
+    }
+    .nav__container ul li{
+        background: blue;
+        width: 10rem;
+        height: 3rem;
+        text-align: center;
+        padding: 1rem 0;
+    }
+    .profile{
+        width: 100%;
+        background: blue;
+        padding: 1rem 0;
+
+    }
+    .profile img{
+        box-shadow: none;
+
+        margin: 0 auto;
+    }
+    .nav__container Button{
+        display: inline-block;
+        display: block;
+        cursor: pointer;
+        font-size: 2rem;
+        color: white;
+        background: transparent;
+        border: none;
+    }
+    Button.close{
+        display: none;
+    }
+
 }
