@@ -11,5 +11,5 @@ closebtn.addEventListener("click",()=>{
     menu.style.display='none';
     menubtn.style.display='inline-block';
     closebtn.style.display='none';
-})
+});
 
