@@ -122,6 +122,7 @@ img{
     align-items: center;
     justify-content: center;
     padding: 1rem;
+    
     /* background: whea; */
 }
 .btn:hover{
@@ -294,6 +295,12 @@ section.about .container .info p{
 .more{
     color: red;
 }
+.read-more{
+    display: none;
+}
+.read-more.show{
+    display: block;
+}
 .more:hover{
     text-decoration: underline;
 }
@@ -323,7 +330,11 @@ section.skills .skill .lower{
     display: flex;
     flex-direction: column;   
     gap: 1rem;
+    display: none;
     /* display: none; */
+}
+section.skills .skill .lower.open{
+    display: block;
 }
 section.skills .skill .lower .item{
     display: flex;
@@ -412,4 +423,137 @@ section.portfolio .container .projects .work .links{
     display: flex;
     /* flex-direction: column; */
     gap: 2rem;
+}
+
+nav .container .i{
+    display: none;
+}
+@media screen and (max-width:660px){
+    body{
+        background: black;
+    }
+    h1{
+        font-size: 2.2rem;
+    }
+    h2{
+        font-size: 1.8rem;
+    }
+    h3{
+        font-size: 1.4rem;
+    }
+    h4{
+        font-size: 1rem;
+    }
+    h5{
+        font-size: 0.7rem;
+    }
+    nav .container{
+        width: 100%;
+    }
+    nav .container h2{
+        margin-left: 2rem;
+    }
+    nav .container ul{
+        position: fixed;
+        top: 0;
+        z-index: 0;
+        height: 100vh;
+        width: 15rem;
+        background: white;
+        flex-direction: column;
+        padding-top: 2rem;
+        box-shadow: 1rem 0rem 1rem rgba(0,0,0,0.2);
+        text-align: center;
+
+        /* align-items: center; */
+        /* justify-content: center; */
+        display: none;
+    }
+    nav .container ul li{
+        padding: 1rem;
+    }
+    nav .container ul li a{
+        color: black;
+    }
+    nav .container i{
+        cursor: pointer;
+        padding-right: 2rem;
+    }
+    nav .container i#close{
+        display: none;
+    }
+    section{
+        max-width: 100vw;
+    }
+    section.landing{
+        max-width: 100vw;
+        margin-top: -4rem;
+        overflow-x: hidden;
+        padding-bottom: 7rem;
+    }   
+    section.landing .container{
+
+        grid-template-columns: 1fr;
+        text-align: center;
+        margin: 0 auto;
+        /* width: 90%; */
+        /* justify-content: center; */
+
+        /* grid-template-rows: 20% 50%; */
+    }
+    section.landing .container h1{
+        text-align: center;
+    }
+    section.landing .container h4{
+        text-align: center;
+    }
+    section.landing .container .info p{
+        text-align: center;
+    }
+    section.landing .social{
+        display: none;
+    }
+    section.landing .container .info{
+        width: 90%;
+        margin: 0 auto;
+    }
+    section.landing .container .btn{
+        margin: 0 auto;
+    }
+    .btn{
+        margin: 0 auto;
+    }
+    section.landing .profile{
+        grid-row: 1;
+        margin: 0 auto;
+
+    }
+    section.landing .profile .outer-circle{
+        width: 16rem;
+        height: 16rem;
+    }
+    section.landing .profile .inner-circle
+    {
+        width: 10rem;
+        height: 10rem;
+    }
+    section.about .container{
+        grid-template-columns: 1fr;
+        /* width: 100%; */
+        text-align: center;
+        margin: 0 auto;
+    }
+    section.skills .container{
+        width: 92%;
+        margin: 0 auto;
+        /* margin-right: 2rem; */
+
+    }
+    section.services .container{
+        grid-template-columns: 1fr;
+    }
+    section.portfolio .container .projects{
+        grid-template-columns: 1fr;
+        margin-top: 1rem;
+    }
 }
