@@ -24,7 +24,7 @@
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="service.html">Services</a></li>
-                <li><a href="">Signin</a></li>
+                <li><a href="signin.html">Signin</a></li>
                 <div class="profile">
                     <div class="avatar">
                         <img src="images/avatar3.jpg" alt="">
@@ -42,30 +42,69 @@
             <Button class="close"><i class="fa-sharp fa-solid fa-xmark"></i></button>
         </div>
     </nav>
-
-
-    <section class="signup">
-        <form action="" class="container signup__container" enctype="multipart/form-data">
-            <h3>Edit Post</h3>
-            <input type="text" placeholder="Title">
-            <select name="" id="">
-                <option value="1">Travel</option>
-                <option value="1">Food</option>
-                <option value="1">Entertainment</option>
-                <option value="1">Emotional</option>
-            </select>
-            <textarea rows="8" placeholder="Body"></textarea>
-            <div class="form__control checkbox">   
-                <input type="checkbox" name="" id="check" checked>
-                <label for="check">Featured</label>
+    <div class="dashboard">
+        <div class="container dashboard__container">
+            <div class="hide-aside-button toggler">
+                <i class="fa-sharp fa-solid fa-arrow-left"></i>
             </div>
-            <div class="form__control">   
-                <label for="Thumbnail">Update Thumbnail</label>
-                <input type="file" id="Thumbnail">
+            <div class="show-aside-button toggler">
+                <i class="fa-sharp fa-solid fa-arrow-right"></i>
             </div>
-            <Button type="submit" class="button" >Update Post</Button>
-        </form>
-    </section>
+            <div class="aside">
+                <ul>
+                    <li>
+                        <a href="add-post.html"><i class="fa-sharp fa-solid fa-pen"></i><h5>Add Post</h5></a>
+                    </li>
+                    <li class="active">
+                        <a href="manage-posts.html"><i class="fa-solid fa-images"></i><h5>Manage Post</h5></a>
+
+                    </li>
+                    <li>
+                        <a href="add-user.html"><i class="fa-solid fa-user"></i><h5>Add user</h5></a>
+                    </li>
+                    <li>
+                        <a href="manage-users.html"><i class="fa-solid fa-users"></i><h5>Manage User</h5></a>
+                    </li>
+                    <li>
+                        <a href="add-category.html"><i class="fa-solid fa-images"></i><h5>Add Category</h5></a>
+                    </li>
+                    <li>
+                        <a href="manage-categories.html" ><i class="fa-solid fa-bars"></i><h5>Manage Categories</h5></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="main">
+                <h2>Manage Posts</h2>
+                <table>
+                    <tr>
+                        <th>Title</th>
+                        <th>Category</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
+                    </tr>
+                    <tr>
+                        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, sunt.</td>
+                        <td>Art</td>
+                        <td><Button class="button sm">Edit</Button></td>
+                        <td><Button class="button sm danger">Delete</Button></td>
+                    </tr>
+                    <tr>
+                        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, sunt.</td>
+                        <td>Music</td>
+                        <td><Button class="button sm">Edit</Button></td>
+                        <td><Button class="button sm danger">Delete</Button></td>
+                    </tr>
+                    <tr>
+                        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, sunt.</td>
+                        <td>Literature</td>
+                        <td><Button class="button sm">Edit</Button></td>
+                        <td><Button class="button sm danger">Delete</Button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
     <footer>
         <div class="footer__container container">
             <div class="social">
